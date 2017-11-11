@@ -8,10 +8,10 @@ function takeANumber(katzDeliLine, name) {
 }
 
 function nowServing(katzDeliLine) {
-  var l = katzDeliLine.length
+  var line = katzDeliLine.length
   var firstPerson = katzDeliLine[0];
 
-  if (l != 0) {
+  if (line == 0) {
     katzDeliLine.splice(0,1);
     return "Currently serving " + firstPerson + ".";
   } else {

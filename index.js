@@ -20,7 +20,7 @@ function nowServing(katzDeliLine) {
 }
 
 function currentLine(katzDeliLine) {
-  var text = [];
+  var array = [];
 
   for (var i = 0; i < katzDeliLine.length; i++) {
       text += i + ". " + katzDeliLine[i];

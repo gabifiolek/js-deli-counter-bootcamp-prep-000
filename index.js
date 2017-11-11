@@ -10,10 +10,10 @@ function takeANumber(katzDeliLine, name) {
 function nowServing(katzDeliLine) {
   var l = katzDeliLine.length
   var firstPerson = katzDeliLine[0];
-  
+
   if (l != 0) {
-    return "Currently serving " + firstPerson + ".";
     katzDeliLine.splice(0,1);
+    return "Currently serving " + firstPerson + ".";
   } else {
     return 'There is nobody waiting to be served!';
   }

@@ -19,4 +19,10 @@ function nowServing(katzDeliLine) {
   }
 }
 
-function 
+function currentLine(katzDeliLine) {
+  var text;
+  
+  for (var i = 0; i < katzDeliLine.length; i++) {
+      text += i + ". " + katzDeliLine[i]
+  }
+}
